@@ -2,7 +2,7 @@
   "name": "contentful-metalsmith",
   "description": "A Metalsmith's plugin to get content from Contentful",
   "main": "index.js",
-  "version": "99.2.0",
+  "version": "99.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/contentful-labs/contentful-metalsmith.git"
@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "dependencies": {
-    "contentful": "^6.1.1",
+    "contentful": "^7.0.5",
     "debug": "^2.6.3",
     "lodash.pick": "^4.4.0",
     "lodash.template": "^4.4.0",
@@ -24,21 +24,19 @@
     "coveralls": "^2.11.12",
     "cz-conventional-changelog": "^1.2.0",
     "eslint": "^3.3.1",
-    "eslint-config-standard": "^6.0.0-beta.3",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0",
     "handlebars": "^4.0.5",
     "metalsmith": "^2.2.0",
     "metalsmith-layouts": "^1.6.5",
     "nyc": "^8.1.0",
-    "proxyquire": "^1.7.10",
-    "semantic-release": "^4.3.5"
+    "proxyquire": "^1.7.10"
   },
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint \"**/*.js\"",
-    "test": "npm run lint && nyc ava **/*.spec.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test": "npm run lint && nyc ava **/*.spec.js"
   },
   "config": {
     "commitizen": {
